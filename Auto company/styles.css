@@ -1,0 +1,271 @@
+/* Resetting margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #031c3a;
+  line-height: 1.6; /* Improves readability and spacing between lines */
+  padding: 20px; /* Adds a bit of padding to the body for breathing room */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8ea5a4;
+  color: white;
+  /* padding: ; /* Adds padding for better spacing inside the header */
+  /* margin-bottom: ; /* Adds space below the header */
+}
+
+.logo-container {
+  flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+.logo {
+  max-width: 100px; /* Controls the logo size */
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-grow: 1; /* Allows the nav to take up available space */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #031c3a;
+  text-decoration: none; /* Ensure no underline on nav links */
+  font-size: 20px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #f7ecd1; /* Changes color on hover or focus */
+}
+
+a {
+  color: rgb(9, 9, 80);
+  text-decoration: none; /* Ensure no underline on all links */
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px; /* Adds space below heading */
+  font-size: 32px;
+}
+
+p {
+  margin-bottom: 15px; /* Adds space below each paragraph */
+  font-size: 18px; /* Keeps text consistent and readable */
+}
+
+/* Styling for the "Why Choose Us?" list */
+.why-choose-us {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove left padding */
+  text-align: left; /* Align the list to the left */
+  margin: 20px auto; /* Center the list within the main content area */
+  max-width: 500px; /* Constrain the list width for better alignment */
+}
+
+.why-choose-us li {
+  margin-bottom: 10px; /* Add space between list items */
+  font-size: 18px; /* Adjust font size for readability */
+  padding-left: 25px; /* Add padding for custom icons */
+  position: relative;
+}
+
+.why-choose-us li::before {
+  content: "✅"; /* Custom icon before each list item */
+  position: absolute;
+  left: 0; /* Position the icon to the left */
+  top: 0;
+}
+
+.car-listing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between car items */
+  justify-content: center; /* Center items in the container */
+  margin-bottom: 40px; /* Adds space between car listing and footer */
+}
+
+.car {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 20px); /* Three cars per row */
+  margin: 10px 0; /* Adjusted vertical margins */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.car img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth zoom effect for images */
+}
+
+.car:hover img {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.map-container {
+  height: 60vh;
+  width: 95vw;
+  max-width: 900px; /* Added missing unit */
+  position: relative;
+}
+
+iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #031c3a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #feba55;
+}
+
+/* Contact Us Section */
+#contact-us {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#contact-us .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#contact-us h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#contact-us form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+#contact-us .form-group {
+  margin-bottom: 15px;
+}
+
+#contact-us .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#contact-us .form-group input,
+#contact-us .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#contact-us .form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+#contact-us .form-group button {
+  background-color: #34323d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact-us .form-group button:hover {
+  background-color: #feba55;
+}
+
+/* Social Media Icons */
+.social-media {
+  text-align: center; /* Centers the social media icons */
+  margin-top: 20px; /* Space above the icons */
+}
+
+.social-icon {
+  margin: 0 10px; /* Space between icons */
+  display: inline-block;
+}
+
+.social-icon img {
+  width: 30px; /* Adjust the size of the icons */
+  height: auto;
+  vertical-align: middle;
+}
+
+footer {
+  background-color: #8ea5a4;
+  color: white;
+  text-align: center;
+  padding: 20px 0; /* Adds padding for better spacing inside the footer */
+  margin-top: 40px; /* Adds more space above the footer */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: flex-end; /* Align navigation to the right on smaller screens */
+  }
+
+  .logo {
+    max-width: 120px; /* Smaller logo on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .logo {
+    max-width: 100px; /* Smaller logo on mobile */
+  }
+}

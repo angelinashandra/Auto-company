@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icons/5.png" type="image/x-icon" />
+    <title>About Us - Car Rental</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="icons/Logo final.png" alt="Car Rental Logo" class="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="About.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>About Us</h1>
+      <p>
+        Welcome to <b>Kouseki Auto Rental company</b> ! We are committed to
+        providing the best car rental services at the competitive price. Our
+        fleet includes a variety of cars to suit all needs and occasions. Our
+        premium location around YVR in Richmond, BC allows our guests to get
+        their car handed just by the time they hop off the train.
+      </p>
+      <p>
+        We pride ourselves on offering excellent customer service and a
+        hassle-free rental experience.
+      </p>
+      <h2>Our Mission</h2>
+      <p>
+        To provide high-quality vehicles with flexible rental options and
+        outstanding customer support.
+      </p>
+
+      <h2>🌟 <strong>Why Choose Us?</strong> 🌟</h2>
+      <ul class="why-choose-us">
+        <li>Instant booking</li>
+        <li>24/7 pickup & drop-off / chat support</li>
+        <li>Quick key handover</li>
+        <li>Clean & sanitized cars</li>
+        <li>Child seat rentals</li>
+        <li>Customer satisfaction on every reservation</li>
+      </ul>
+
+      <h1>Location</h1>
+      <iframe
+        class="map-container"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.9621360618194!2d-123.1730535!3d49.1823051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54860b2f5ee05d3b%3A0x71f953c5e0762ca1!2s4380%20Agar%20Dr%2C%20Richmond%2C%20BC%20V7B%201A3!5e0!3m2!1sen!2sca!4v1725668336418!5m2!1sen!2sca"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+
+      <h1 id="booking">How to book</h1>
+      <p>
+        Fill out our contact-us form mentioning a vehicle and date you would
+        like to reserve. Our representative will contact you in the
+        <b>next 24 hours!</b>
+      </p>
+
+      <section id="contact-us">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form id="contact-form" onsubmit="submitForm(event)">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+          <div id="email-output" class="email-output"></div>
+
+          <!-- Social Media Icons -->
+          <section class="social-media">
+            <a
+              href="https://www.facebook.com/profile.php?id=61565112096810"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="icons/facebook.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/kouseki_auto_rental_company/"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="icons/instagram.png" alt="Instagram" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/kouseki-auto-rental/?viewAsMember=true"
+              target="_blank"
+              class="social-icon"
+            >
+              <img src="icons/linkedin.png" alt="LinkedIn" />
+            </a>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Kouseki Auto Rental Inc.</p>
+    </footer>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
